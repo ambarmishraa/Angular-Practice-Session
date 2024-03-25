@@ -15,5 +15,9 @@ export class AppComponent {
   Title="This is my Practice Session on Angular 17";
 
   //Property Binding
+  currentValue:Boolean=false;
   name="Ambar Mishra";
+  onclick(){
+    this.currentValue = !this.currentValue; 
+  }
 }

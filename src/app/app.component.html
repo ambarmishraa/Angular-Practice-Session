@@ -6,3 +6,11 @@ Syntax->{{expression}}-->
   Syntax-> [property]='expression'-->
   <span [innerHTML]="name"></span>
 <!-- img [src]=link; -->
+
+<button (click)="onclick()">Event Trigger Button</button>
+<button [disabled]="currentValue">
+  Response Button
+</button>
+
+<!-- Difference Between Interpolation and Property Binding -->
+<!-- Interpolation fails when boolean value is used. So when we need to work with property we must use property Binding. -->
