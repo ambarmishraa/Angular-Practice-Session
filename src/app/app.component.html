@@ -1,16 +1,21 @@
 <!-- Interpolation 
 Syntax->{{expression}}-->
-<h1>Title: {{title}}</h1>
+<h1>Title: {{ title }}</h1>
 
 <!-- Property Binding 
   Syntax-> [property]='expression'-->
-  <span [innerHTML]="name"></span>
+<span [innerHTML]="name"></span>
+<br><br><br>
 <!-- img [src]=link; -->
 
 <button (click)="onclick()">Event Trigger Button</button>
-<button [disabled]="currentValue">
-  Response Button
-</button>
-
+<button [disabled]="currentValue">Trigger Response Button</button>
+<br><br><br>
 <!-- Difference Between Interpolation and Property Binding -->
 <!-- Interpolation fails when boolean value is used. So when we need to work with property we must use property Binding. -->
+
+<!-- Two way Binding -->
+<!-- Syntax-> [(ngModel)] = 'data'; -->
+<input type="text" [(ngModel)]='_message'>
+
+<h3>Your Message : {{_message}}</h3>
