@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'AngularPracticeSession';
+
+  //Interpolation is used here
+  Title="This is my Practice Session on Angular 17";
+
+  //Property Binding
+  name="Ambar Mishra";
 }
